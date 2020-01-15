@@ -5,7 +5,7 @@ import static org.hamcrest.core.Is.is;
 
 public class FizzBuzzTest {
     @Test
-    public  void printNum(){
+    public void printNum() {
         checkPrint("1", 1);
     }
 
@@ -14,17 +14,17 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public  void printFizz(){
+    public void printFizz() {
         checkPrint("Fizz", 3);
     }
 
     @Test
-    public  void printBuzz(){
+    public void printBuzz() {
         checkPrint("Buzz", 5);
     }
 
     @Test
-    public  void printFizzBuzz(){
+    public void printFizzBuzz() {
         checkPrint("FizzBuzz", 15);
     }
 }
