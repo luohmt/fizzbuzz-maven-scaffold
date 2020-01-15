@@ -1,18 +1,20 @@
 
 public class FizzBuzz {
 
+
     public static String of(int num) {
-        if (isDivided(num, 3) && isDivided(num, 5)) {
-            return "FizzBuzz";
-        }
+        String res = "";
 
         if (isDivided(num, 3)) {
-            return "Fizz";
+            res += "Fizz";
         }
         if (isDivided(num, 5)) {
-            return "Buzz";
+            res += "Buzz";
         }
-        return String.valueOf(num);
+        if (res.isEmpty()) {
+            res += num;
+        }
+        return res;
     }
 
     private static boolean isDivided(int num, int i) {
